@@ -16,6 +16,7 @@ The `palmerpenguins` case study can be found in [Code/case study: palmerpenguins
 
 The final results and graphs can be viewed in the presentation and report.
 
+
 ## Presentation & Report
 
 ------
