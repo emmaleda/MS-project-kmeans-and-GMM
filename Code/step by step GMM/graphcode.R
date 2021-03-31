@@ -1,5 +1,6 @@
 library(tidyverse)
 library(latex2exp)
+library(mvtnorm)
 
 ## this is GMM by hand
 
@@ -151,7 +152,7 @@ for (i in 1:100) {
     loglik.vector <- c(loglik.vector, e.step[["loglik"]])
     
     loglik.diff <- abs((cur.loglik - e.step[["loglik"]]))
-    if(loglik.diff < 1e-6) {
+    if(loglik.diff < 1e-20) {
       break
     } else {
       cur.loglik <- e.step[["loglik"]]

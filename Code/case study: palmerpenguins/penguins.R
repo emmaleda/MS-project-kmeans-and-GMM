@@ -25,6 +25,8 @@ penguins_z_na <- na.omit(penguins_z) # remove NA values
 set.seed(11206)
 penguin_clusters <- kmeans(penguins_z_na, 3, nstart  = 10)
 table1 <- table(penguins_sub_Sp_na$species, penguin_clusters$cluster)
+table1
 
 mod <- Mclust(subset_penguins, G = 3)
 table2 <- table(subset_penguins_Sp$species, mod$classification)
+table2
