@@ -18,6 +18,6 @@ The final results and graphs can be viewed in the presentation and report.
 
 ## Presentation & Report
 
-My MS paper can be found under [Report/MSproject_EmmaGrossman_report.pdf](https://github.com/emmaleda/MS-project-kmeans-and-GMM/blob/1749d796f81ee21e185ed6ddf900e5e47f705ae5/Report/MSproject_EmmaGrossman_report.pdf). The presentation will be available soon.
+My MS paper can be found under [Report/report.pdf](https://github.com/emmaleda/MS-project-kmeans-and-GMM/blob/43e82d13486ffc775be0343a5ec06aeca8b5b9b2/Report/report.pdf). The presentation can be found under [Report/slides.pdf](https://github.com/emmaleda/MS-project-kmeans-and-GMM/blob/43e82d13486ffc775be0343a5ec06aeca8b5b9b2/Report/slides.pdf)
 
 ------
