@@ -42,6 +42,12 @@ data_both_CF$kmeans_prop[1]
 # look at models selected by mclust
 table(data_both$GMM_results$model_name)
 
+# View a scatterplot of the data with the true clusters
+ggplot(data_both$comp_data[[24]])+
+  geom_point(aes(x = x, y = y, color = group))+
+  ggtitle("Scenario 1: True Clusters")+
+  labs(color = "Cluster")
+
 ## Scenario 2: #########################################################################################
 
 set.seed(300)
@@ -82,3 +88,15 @@ data_GMM_bet_CF$kmeans_prop[1]
 
 # look at models selected by mclust
 table(dif_GMM_bet$GMM_results$model_name)
+
+# View a scatterplot of the data with the true clusters
+ggplot(dif_GMM_bet$comp_data[[24]])+
+  geom_point(aes(x = x, y = y, color = group))+
+  ggtitle("Scenario 2: True Clusters")+
+  labs(color = "Cluster")
+
+# View the unusually large parameters visiable in the kmeans graph
+unusual_points <- dif_GMM_bet$kmeans_results %>%
+  filter(x1_est >1) 
+unusual_points
+unusual_points$confusion_matrix
